@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://gguolin36-lang.github.io" crossorigin>
 <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-<link rel="preload" as="image" href="images/hero/courtyard-hero.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="https://gguolin36-lang.github.io/wennuan-hijab-catalog/images/hero/courtyard-hero.jpg" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&family=Amiri:wght@400&display=swap" rel="stylesheet">
 
 <!-- ExcelJS lazy loaded only when user opens basket export (saves ~900KB on first paint) -->
@@ -144,7 +144,7 @@ header{
   background:
     linear-gradient(95deg, rgba(15,10,6,0.78) 0%, rgba(26,18,9,0.55) 38%, rgba(0,0,0,0.18) 58%, rgba(0,0,0,0) 75%),
     linear-gradient(180deg, rgba(0,0,0,0.15) 0%, transparent 30%, rgba(0,0,0,0.45) 100%),
-    url('images/hero/courtyard-hero.jpg') center 30% / cover no-repeat;
+    url('https://gguolin36-lang.github.io/wennuan-hijab-catalog/images/hero/courtyard-hero.jpg') center 30% / cover no-repeat;
   color:#FBF7EE;
   overflow:hidden;
   z-index:1;
@@ -1610,6 +1610,21 @@ footer::before{
 @supports (padding:max(0px)){
   header{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
   footer{padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+}
+</style>
+
+<style id="seller-mobile-hero-patch">
+/* Seller site mobile hero patch — keep model face visible on portrait phones */
+@media (max-width: 768px) {
+  .hero, section.hero, .hero-section, [class*="hero"] {
+    background-position: center 22% !important;
+  }
+}
+@media (max-width: 480px) {
+  .hero, section.hero, .hero-section, [class*="hero"] {
+    background-position: 58% 20% !important;
+    background-size: cover !important;
+  }
 }
 </style>
 </head>
