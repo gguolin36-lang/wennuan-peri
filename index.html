@@ -1614,7 +1614,6 @@ footer::before{
 </style>
 
 <style id="seller-mobile-hero-patch">
-/* Seller site mobile hero patch — keep model face visible on portrait phones */
 @media (max-width: 768px) {
   .hero, section.hero, .hero-section, [class*="hero"] {
     background-position: center 22% !important;
@@ -1839,7 +1838,7 @@ footer::before{
       <a href="mailto:wennuan@wennuanfactory.com">wennuan@wennuanfactory.com</a>
       <a href="https://wa.me/8615088248404"
          onclick="event.preventDefault(); openWhatsApp(); return false;"
-         rel="noopener">WhatsApp +86 150 8824 8404</a>
+         rel="noopener">WhatsApp +86 150 8824 8404 (Peri)</a>
     </div>
     <div class="footer-col">
       <h5>Services</h5>
@@ -1873,7 +1872,7 @@ footer::before{
 <a href="https://wa.me/8615088248404"
    onclick="event.preventDefault(); openWhatsApp(); return false;"
    class="whatsapp-float"
-   title="Chat on WhatsApp: +86 150 8824 8404"
+   title="Chat on WhatsApp: +86 150 8824 8404 (Peri)"
    aria-label="WhatsApp">💬</a>
 
 <!-- Toast -->
@@ -13276,7 +13275,7 @@ async function exportExcel(){
     c.alignment = { vertical:'middle', horizontal:'center' };
   });
   ws.addRow([]);
-  const infoRow = ws.addRow(['Yiwu Wennuan Clothing  ·  wennuan@wennuanfactory.com  ·  WhatsApp +86 150 8824 8404']);
+  const infoRow = ws.addRow(['Yiwu Wennuan Clothing  ·  wennuan@wennuanfactory.com  ·  WhatsApp +86 150 8824 8404 (Peri)']);
   ws.mergeCells(`A${infoRow.number}:H${infoRow.number}`);
   infoRow.getCell(1).font = { italic:true, size:10, color:{argb:'FF6B4F3F'} };
   infoRow.getCell(1).alignment = { horizontal:'center' };
@@ -13411,7 +13410,7 @@ async function exportExcel(){
 
     // Footer contact line
     wsP.addRow([]).height = 8;
-    const footRow = wsP.addRow(['Yiwu Wennuan Clothing  ·  wennuan@wennuanfactory.com  ·  WhatsApp +86 150 8824 8404']);
+    const footRow = wsP.addRow(['Yiwu Wennuan Clothing  ·  wennuan@wennuanfactory.com  ·  WhatsApp +86 150 8824 8404 (Peri)']);
     wsP.mergeCells(`A${footRow.number}:${colLetter(1+COLS_PER_ROW)}${footRow.number}`);
     footRow.getCell(1).font = { italic:true, size:10, color:{argb:'FF6B4F3F'} };
     footRow.getCell(1).alignment = { horizontal:'center' };
